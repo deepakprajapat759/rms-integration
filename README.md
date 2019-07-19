@@ -186,3 +186,37 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+
+
+
+
+use RMS;
+insert into USER values(1101,'Deepak','deepak@gmail.com','deepak@123','ROLE_BORROWER',1,'2019-7-5','2019-7-5');
+insert into USER values(2101,'Ram','ram@gmail.com','ram@123','ROLE_LENDER',1,'2019-7-5','2019-7-5');
+insert into USER values(2102,'Aman','aman@gmail.com','aman@123','ROLE_LENDER',1,'2019-7-5','2019-7-5');
+insert into LENDER values(2101,6 ,'Get loan at very less interest','5 yr- 10 yr','5 cr - 10 cr');
+insert into POLICY values(4101,'Bankrupt',2101,'2019-7-5','2019-7-5');
+insert into POLICY values(4102,'Total Assets',0,'2019-7-5','2019-7-5');
+insert into MAPPING_LENDER_POLICY values(2101,4101,'NO', 3,1);
+insert into CREDIT_APPLICATION values(5101,90,1, 'Impetus',1101,0,2101,'2019-7-5','2019-7-5');
+insert into MAPPING_CREDITAPP_POLICY values(6101,5101,4101, 'NO');
+insert into USER values(7101,'Amisha','amisha@gmail.com','amisha@123','ROLE_FINANCIAL_ANALYST',1,'2019-7-5','2019-7-5');
+insert into FINANCIAL_ANALYST values(7101,2101);
+insert into MAPPING_POLICY_BORROWER values(4101,'Bankrupt',1101);
+insert into LENDER values(2102,12 ,'Best loan provider company','10 yr- 15 yr','12 cr - 20 cr');
+insert into USER values(2103,'Neeraj','neeraj@gmail.com','neeraj@123','ROLE_LENDER',1,'2019-7-5','2019-7-5');
+insert into POLICY values(4103,'Turnover',0,'2019-7-5','2019-7-5');
+insert into POLICY values(4104,'Age Limit',0,'2019-7-5','2019-7-5');
+insert into POLICY values(4105,'Family Income',2101,'2019-7-5','2019-7-5');
+insert into POLICY values(4106,'Car',2102,'2019-7-5','2019-7-5');
+
+
+
+
+
+
+
+
+
