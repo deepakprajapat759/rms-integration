@@ -217,6 +217,6 @@ insert into POLICY values(4106,'Car',2102,'2019-7-5','2019-7-5');
 
 
 
-
+insert into USER values(7101,'Amisha','amisha@gmail.com','$2a$10$p0uKwMTqEmD2.VXpvuHuVe3c3Q/u4soM9uD7mkT65VR3rPfqFBjbm','ROLE_FINANCIAL_ANALYST',1,'2019-7-5','2019-7-5');
 
 
