@@ -197,9 +197,12 @@ insert into USER values(1101,'Deepak','deepak@gmail.com','deepak@123','ROLE_BORR
 insert into USER values(2101,'Ram','ram@gmail.com','ram@123','ROLE_LENDER',1,'2019-7-5','2019-7-5');
 insert into USER values(2102,'Aman','aman@gmail.com','aman@123','ROLE_LENDER',1,'2019-7-5','2019-7-5');
 insert into LENDER values(2101,6 ,'Get loan at very less interest','5 yr- 10 yr','5 cr - 10 cr');
+
 insert into POLICY values(4101,'Bankrupt',2101,'2019-7-5','2019-7-5');
 insert into POLICY values(4102,'Total Assets',0,'2019-7-5','2019-7-5');
+
 insert into MAPPING_LENDER_POLICY values(2101,4101,'NO', 3,1);
+
 insert into CREDIT_APPLICATION values(5101,90,1, 'Impetus',1101,0,2101,'2019-7-5','2019-7-5');
 insert into MAPPING_CREDITAPP_POLICY values(6101,5101,4101, 'NO');
 insert into USER values(7101,'Amisha','amisha@gmail.com','amisha@123','ROLE_FINANCIAL_ANALYST',1,'2019-7-5','2019-7-5');
@@ -219,4 +222,29 @@ insert into POLICY values(4106,'Car',2102,'2019-7-5','2019-7-5');
 
 insert into USER values(7101,'Amisha','amisha@gmail.com','$2a$10$p0uKwMTqEmD2.VXpvuHuVe3c3Q/u4soM9uD7mkT65VR3rPfqFBjbm','ROLE_FINANCIAL_ANALYST',1,'2019-7-5','2019-7-5');
 
+insert into FINANCIAL_ANALYST values(7101,2101);
 
+insert into POLICY values(4101,'Bankrupt',2101,'2019-7-5','2019-7-5');
+insert into POLICY values(4102,'Total Assets',0,'2019-7-5','2019-7-5');
+
+
+                     
+APPLICATION_STATUS        
+Range - 0-30         Reject    1
+        31 - 60      Hold      2
+        61 - 100     Approve   3  
+         
+
+
+insert into CREDIT_APPLICATION values(5101,50,2, 'Impetus',1101, 7101 , 2101 ,'2019-7-5','2019-7-5');
+insert into MAPPING_CREDITAPP_POLICY values(6101,5101,4101, 'NO');
+insert into MAPPING_CREDITAPP_POLICY values(6102,5101,4102, '20');
+insert into MAPPING_CREDITAPP_POLICY values(6103,5101,4103, '1000000');
+
+insert into POLICY values(4101,'Bankrupt',2101,'2019-7-5','2019-7-5');
+insert into POLICY values(4102,'Total Assets',0,'2019-7-5','2019-7-5');
+insert into POLICY values(4103,'Turnover',0,'2019-7-5','2019-7-5');
+
+
+insert into POLICY values(4105,'Family Income',2101,'2019-7-5','2019-7-5');
+insert into POLICY values(4106,'Car',2102,'2019-7-5','2019-7-5');
