@@ -248,3 +248,16 @@ insert into POLICY values(4103,'Turnover',0,'2019-7-5','2019-7-5');
 
 insert into POLICY values(4105,'Family Income',2101,'2019-7-5','2019-7-5');
 insert into POLICY values(4106,'Car',2102,'2019-7-5','2019-7-5');
+
+
+
+
+insert into USER values(1102,'Pawan Nerkar','pawan@gmail.com','$2a$10$XQ6n0BRsSTyiLehSteUxmu8Cf1/yW9bnBglB2QnOBivP74U21sfVO','ROLE_BORROWER',1,'2019-7-6','2019-7-6');
+
+
+insert into CREDIT_APPLICATION values(5102,60,2, 'Innoeye',1102, 7101 , 2101 ,'2019-7-6','2019-7-6');
+insert into MAPPING_CREDITAPP_POLICY values(6104,5102,4101, 'NO');
+insert into MAPPING_CREDITAPP_POLICY values(6105,5102,4102, '25');
+insert into MAPPING_CREDITAPP_POLICY values(6106,5102,4103, '1000050');
+
+
