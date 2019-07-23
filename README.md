@@ -265,3 +265,25 @@ insert into MAPPING_CREDITAPP_POLICY values(6105,5102,4102, '25');
 insert into MAPPING_CREDITAPP_POLICY values(6106,5102,4103, '1000050');
 
 
+
+
+---------------------------------------------------------------------------;
+insert into USER values(1103,'Neeraj Vyas','neerajvyas615@gmail.com','$2a$10$XQ6n0BRsSTyiLehSteUxmu8Cf1/yW9bnBglB2QnOBivP74U21sfVO','ROLE_BORROWER',1,'2019-7-6','2019-7-6');
+
+insert into CREDIT_APPLICATION values(5103,61,2, 'Microsoft',1103, 7101 , 2101 ,'2019-7-6','2019-7-6');
+insert into MAPPING_CREDITAPP_POLICY values(6107,5103,4101, 'NO');
+insert into MAPPING_CREDITAPP_POLICY values(6108,5103,4102, '35');
+insert into MAPPING_CREDITAPP_POLICY values(6109,5103,4103, '1505050');
+
+
+insert into USER values(1104,'Ram Kumar Chugh','ram@gmail.com','$2a$10$XQ6n0BRsSTyiLehSteUxmu8Cf1/yW9bnBglB2QnOBivP74U21sfVO','ROLE_BORROWER',1,'2019-7-6','2019-7-6');
+
+insert into CREDIT_APPLICATION values(5104,58,2, 'Microsoft',1104, 7101 , 2101 ,'2019-7-6','2019-7-6');
+insert into MAPPING_CREDITAPP_POLICY values(6110,5104,4101, 'NO');
+insert into MAPPING_CREDITAPP_POLICY values(6111,5104,4102, '35');
+insert into MAPPING_CREDITAPP_POLICY values(6112,5104,4103, '1100000');
+
+
+-----------------------------------------------------------------------------;
+
+
