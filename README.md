@@ -221,16 +221,12 @@ insert into POLICY values(4106,'Car',2102,'2019-7-5','2019-7-5');
 
 
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 insert into USER values(7101,'Amisha','amisha@gmail.com','$2a$10$p0uKwMTqEmD2.VXpvuHuVe3c3Q/u4soM9uD7mkT65VR3rPfqFBjbm','ROLE_FINANCIAL_ANALYST',1,'2019-7-5','2019-7-5');
 
 insert into FINANCIAL_ANALYST values(7101,2101);
-
-insert into POLICY values(4101,'Bankrupt',2101,'2019-7-5','2019-7-5');
-insert into POLICY values(4102,'Total Assets',0,'2019-7-5','2019-7-5');
-
 
                      
 APPLICATION_STATUS        
@@ -238,14 +234,6 @@ Range - 0-30         Reject    1
         31 - 60      Hold      2
         61 - 100     Approve   3  
          
-         
-insert into POLICY values(4101,'Bankrupt',2101,'2019-7-5','2019-7-5');
-insert into POLICY values(4102,'Total Assets',0,'2019-7-5','2019-7-5');
-insert into POLICY values(4103,'Turnover',0,'2019-7-5','2019-7-5');
-
-insert into POLICY values(4105,'Family Income',2101,'2019-7-5','2019-7-5');
-insert into POLICY values(4106,'Car',2102,'2019-7-5','2019-7-5');
-
 
 
 insert into CREDIT_APPLICATION values(5101,50,2, 'Impetus',1101, 7101 , 2101 ,'2019-7-5','2019-7-5');
@@ -284,4 +272,63 @@ insert into MAPPING_CREDITAPP_POLICY values(6111,5104,4102, '35');
 insert into MAPPING_CREDITAPP_POLICY values(6112,5104,4103, '1100000');
 
 
+
 -----------------------------------------------------------------------------;
+
++--------------------------+
+| Tables_in_RMS            |
++--------------------------+
+| CREDIT_APPLICATION       |
+| FINANCIAL_ANALYST        |
+| LENDER                   |
+| MAPPING_CREDITAPP_POLICY |
+| MAPPING_LENDER_POLICY    |
+| MAPPING_POLICY_BORROWER  |
+| POLICY                   |
+| USER                     |
++--------------------------+
+
+
+CREATE TABLE IF NOT EXISTS `RMS`.`POLICY_DETAIL` (
+  `DETAIL_ID` INT(2) NOT NULL AUTO_INCREMENT primary key,
+  `LENDER_ID` INT(2) NOT NULL,
+  `POLICY_ID` INT(2) NOT NULL,
+  `THRESHOLD` VARCHAR(20) NOT NULL,
+  `POLICY_WEIGHTAGE` INT(1) NOT NULL,
+  `POLICY_STATUS` INT(1) NOT NULL)
+ENGINE = InnoDB;
+
++--------------------------+
+| Tables_in_RMS            |
++--------------------------+
+| CREDIT_APPLICATION       |
+| FINANCIAL_ANALYST        |
+| LENDER                   |
+| MAPPING_CREDITAPP_POLICY |
+| MAPPING_LENDER_POLICY    |
+| MAPPING_POLICY_BORROWER  |
+| POLICY                   |
+| POLICY_DETAIL            |
+| USER                     |
++--------------------------+
+
+
+
+
+
+
+POLICY 
+insert into POLICY values(4101,'Bankrupt',2101,'2019-7-5','2019-7-5');
+insert into POLICY values(4102,'Total Assets',0,'2019-7-5','2019-7-5');
+insert into POLICY values(4103,'Turnover',0,'2019-7-5','2019-7-5');
+insert into POLICY values(4105,'Family Income',2101,'2019-7-5','2019-7-5');
+insert into POLICY values(4106,'Car',2102,'2019-7-5','2019-7-5');
+
+
+insert into MAPPING_CREDITAPP_POLICY 
+
+
+
+
+
+
