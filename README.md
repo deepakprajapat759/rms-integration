@@ -305,7 +305,6 @@ ENGINE = InnoDB;
 | FINANCIAL_ANALYST        |
 | LENDER                   |
 | MAPPING_CREDITAPP_POLICY |
-| MAPPING_LENDER_POLICY    |
 | MAPPING_POLICY_BORROWER  |
 | POLICY                   |
 | POLICY_DETAIL            |
